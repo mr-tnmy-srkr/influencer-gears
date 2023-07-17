@@ -101,8 +101,6 @@ hr {
   display: flex;
   justify-content: space-evenly;
   padding: 20px 80px;
-  /* margin-bottom: 80px; */
-  /* background-image: linear-gradient(135deg, rgba(192, 204, 218, 0.10) 0%, rgba(192, 204, 218, 0.60) 50.38%, rgba(192, 204, 218, 0.10) 100%); */
 }
 
 /* popular collection */
@@ -217,66 +215,80 @@ footer {
 /* responsiveness */
 /* for mobile devices */
 @media screen and (max-width: 576px) {
-  nav ,.feature-container{
+  nav,
+  .feature-container,
+  .nav-menu {
     flex-direction: column;
   }
-  .banner,.feature-container {
-      flex-direction: column-reverse;
-    }
-    .feature-container{
-        gap: 60px;
-    }
-    .btn{
-        margin-bottom: 50px;
-    }
-    .sponsor, .nav-menu{
-        flex-wrap: wrap;
-        gap:20px;
-    }
-    .banner-description, .feature-text{
-        text-align:center;
-    }
-    .banner-title{
-        font-size: 2rem;
-    }
-    .box-container{
-        grid-template-columns: 1fr;
-        gap: 50px;
-    }
-    .see-more h3{
-        margin-right: 35px;
-    }
+  .banner,
+  .feature-container {
+    flex-direction: column-reverse;
+  }
+  .feature-container {
+    gap: 60px;
+  }
+  .btn {
+    margin-bottom: 50px;
+  }
+  .sponsor {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .banner-description,
+  .feature-text {
+    text-align: center;
+  }
+  .banner-image {
+    width: 350px;
+    height: 350px;
+  }
+  .banner-title {
+    font-size: 2rem;
+  }
+  .box-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .see-more h3 {
+    margin-right: 35px;
+  }
 }
 /* for medium devices */
 @media screen and (min-width: 576px) and (max-width: 960px) {
-    nav ,.feature-container{
-        flex-direction: column;
-      }
-      .banner,.feature-container {
-          flex-direction: column-reverse;
-        }
-        .feature-container{
-            gap: 60px;
-        }
-        .btn{
-            margin-bottom: 50px;
-        }
-        .sponsor{
-            flex-wrap: wrap;
-            gap:20px
-        }
-        .banner-description, .feature-text{
-            text-align:center;
-            
-        }
-        .banner-title{
-            font-size: 2rem;
-        }
-        .box-container{
-            grid-template-columns: 1fr;
-            gap: 50px;
-        }
-        .see-more h3{
-            margin-right: 35px;
-        }
+  nav,
+  .feature-container {
+    flex-direction: column;
+  }
+  .banner,
+  .feature-container {
+    flex-direction: column-reverse;
+  }
+  .feature-container {
+    gap: 60px;
+  }
+  .btn {
+    margin-bottom: 50px;
+  }
+  .sponsor {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .banner-description,
+  .feature-text {
+    text-align: center;
+  }
+  .banner-image {
+    width: 400px;
+    height: 400px;
+  }
+  .banner-title {
+    font-size: 2rem;
+  }
+  .box-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .see-more h3 {
+    margin-right: 35px;
+  }
 }
