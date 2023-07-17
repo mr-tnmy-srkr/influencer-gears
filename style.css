@@ -86,10 +86,15 @@ nav {
 .btn {
   border-radius: 40px;
 }
-hr{
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
 }
 /* sponsor styling */
 .sponsor {
@@ -191,20 +196,88 @@ hr{
   margin-top: 15px;
 }
 /* Footer section */
-footer{
-    background-color: #0A0826;
-    padding: 60px;
+footer {
+  background-color: #0a0826;
+  padding: 60px;
 }
-.footer-container{
-    text-align: center;
+.footer-container {
+  text-align: center;
 }
-.footer-title{
-color: #FFF;
-font-size: 1.5rem;
-font-weight: 700;
+.footer-title {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
-.footer-para{
-color: #D9DBE1;
-font-weight: 700;
-padding: 20px 0;
+.footer-para {
+  color: #d9dbe1;
+  font-weight: 700;
+  padding: 20px 0;
+}
+
+/* responsiveness */
+/* for mobile devices */
+@media screen and (max-width: 576px) {
+  nav ,.feature-container{
+    flex-direction: column;
+  }
+  .banner,.feature-container {
+      flex-direction: column-reverse;
+    }
+    .feature-container{
+        gap: 60px;
+    }
+    .btn{
+        margin-bottom: 50px;
+    }
+    .sponsor{
+        flex-wrap: wrap;
+        gap:20px
+    }
+    .banner-description, .feature-text{
+        text-align:center;
+        
+    }
+    .banner-title{
+        font-size: 2rem;
+    }
+    .box-container{
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    .see-more h3{
+        margin-right: 35px;
+    }
+}
+/* for medium devices */
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    nav ,.feature-container{
+        flex-direction: column;
+      }
+      .banner,.feature-container {
+          flex-direction: column-reverse;
+        }
+        .feature-container{
+            gap: 60px;
+        }
+        .btn{
+            margin-bottom: 50px;
+        }
+        .sponsor{
+            flex-wrap: wrap;
+            gap:20px
+        }
+        .banner-description, .feature-text{
+            text-align:center;
+            
+        }
+        .banner-title{
+            font-size: 2rem;
+        }
+        .box-container{
+            grid-template-columns: 1fr;
+            gap: 50px;
+        }
+        .see-more h3{
+            margin-right: 35px;
+        }
 }
