@@ -1,8 +1,95 @@
 /* shared style */
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color:rgba(243, 147, 22, 0.115);
 }
+:root {
+  --primary-color: red;
+  --secondary-color: #fff;
+  --font-color: #3a3a3a;
+}
+.btn-primary{
+    background: var(--primary-color);
+    /* background-color: #fff; */
+    color: var(--secondary-color);
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 25px;
+    border: 0;
+}
+/* Header section > nav bar styling */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 0;
+}
+.nav-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--font-color);
+}
+.nav-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-menu li {
+  list-style: none;
+}
+.nav-menu li a {
+  text-decoration: none;
+  color: var(--font-color);
+
+  font-size: 18px;
+  font-weight: 600;
+}
+.nav-menu img {
+  padding-top: 10px;
+}
+/* banner section */
+.banner-container{
+   margin:  0 100px;
+}
+.banner {
+  display: flex;
+  /* gap: 20px; */
+  align-items: center;
+  
+}
+.banner-description{
+    /* max-width: 60%; */
+}
+.banner-title{
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 70px;
+    color:var(--font-color);
+}
+.banner-info{
+    font-size: 16px;
+    font-weight: 600;
+    padding: 30px 0;
+    color:var(--font-color);
+}
+.banner-image {
+    background-image:url(images/Circle\ design.svg),url(images/main-camera.png);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: contain;
+  width: 475px;
+  height: 475px;
+}
+
+.btn{
+    border-radius: 40px;
+}
+ /* .btn i{
+    background-color: none;
+ } */
