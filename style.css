@@ -229,13 +229,12 @@ footer {
     .btn{
         margin-bottom: 50px;
     }
-    .sponsor{
+    .sponsor, .nav-menu{
         flex-wrap: wrap;
-        gap:20px
+        gap:20px;
     }
     .banner-description, .feature-text{
         text-align:center;
-        
     }
     .banner-title{
         font-size: 2rem;
