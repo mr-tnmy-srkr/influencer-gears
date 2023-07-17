@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
-  background-color:rgba(243, 147, 22, 0.115);
+  /* background-color:rgba(243, 147, 22, 0.115); */
 }
 :root {
   --primary-color: red;
@@ -58,21 +58,17 @@ nav {
 }
 .banner {
   display: flex;
-  /* gap: 20px; */
+  gap: 20px;
   align-items: center;
-  
 }
-.banner-description{
-    /* max-width: 60%; */
-}
+
 .banner-title{
-    font-size: 52px;
+    font-size: 3.25rem;
     font-weight: 700;
-    line-height: 70px;
+    line-height: 4.375rem;
     color:var(--font-color);
 }
 .banner-info{
-    font-size: 16px;
     font-weight: 600;
     padding: 30px 0;
     color:var(--font-color);
@@ -90,6 +86,63 @@ nav {
 .btn{
     border-radius: 40px;
 }
- /* .btn i{
-    background-color: none;
- } */
+/* sponsor styling */
+.sponsor{
+    display:flex;
+    justify-content:space-evenly;
+    padding: 20px 80px;
+    margin-bottom: 80px;
+}
+
+/* popular collection */
+.popular-title{
+    text-align: center;
+    margin-bottom: 50px;
+    color:var(--font-color);
+font-size: 1.75rem;
+font-weight: 600;
+}
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+   place-items: center;
+   grid-gap: 20px;
+   /* background:#F1E4FF; */
+   padding: 30px;
+   width:90%;
+   margin: 0 auto;
+
+}
+.box{
+    width: 329px;
+height: 476px;
+border-radius: 10px;
+box-shadow: 0px 0px 15px 10px rgba(192,171,217,1);
+-moz-box-shadow: 0px 0px 15px 10px rgba(192,171,217,1);
+box-shadow: 0px 0px 15px 10px rgba(192,171,217,1);
+}
+.box-item{
+text-align: left;
+padding: 15px;
+}
+.box-image{
+    /* wi                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         dth: 100%; */
+    /* margin: 0 auto; */
+}
+.box-image-title{
+    color: #18191F;
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+.price{
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.box-image-info{
+    color: #787885;
+    font-weight: 700;
+    width: 12.5rem;
+    /* letter-spacing: 0.252px; */
+}
